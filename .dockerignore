@@ -1,0 +1,9 @@
+# keep the real token out of the image
+config.txt
+
+*.exe
+dist/
+.idea/
+CHAT.md
+CLAUDE.md
+Makefile

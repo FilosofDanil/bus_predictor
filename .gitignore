@@ -1,0 +1,14 @@
+# real config holds the Telegram token — use config.example.txt as a template
+config.txt
+.env
+.env.*
+
+# build output
+*.exe
+bus_predictor
+dist/
+
+# IDE / local tooling
+.idea/
+.claude/settings.local.json
+graphify-out/

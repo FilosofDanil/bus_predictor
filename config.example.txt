@@ -1,0 +1,7 @@
+# Example config — also the default config baked into the Docker image.
+# Without a token the program prints a one-shot console report for stop/line;
+# set TELEGRAM_BOT_TOKEN (env) or telegram_token here to run the Telegram bot.
+stop = Moritzstr
+line = 134
+# richtung = Hahneberg
+# telegram_token = <token from @BotFather>

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./graphify-out/cache/**)",
+      "Read(./*.exe)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Users/serhi/AppData/Local/Programs/Python/Python312/Scripts/graphify.EXE hook-guard search",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:/Users/serhi/AppData/Local/Programs/Python/Python312/Scripts/graphify.EXE hook-guard read",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_SUBAGENT_MODEL": "sonnet",
+    "PYTHONHASHSEED": "0",
+    "PYTHONUTF8": "1"
+  }
+}
